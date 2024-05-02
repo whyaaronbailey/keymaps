@@ -9,6 +9,62 @@ These keymaps depend upon [my Adafruit RP2040 USB Host Branch]((https://github.c
 * Generic Razer Tartarus V2 under `keymaps/tartarus`
 * PACS specific Razer Tartarus V2 keymaps under `keymaps/tartarus_pacs`
 
+## PACS Keymaps
+
+These keymaps are specific to a particular environment, which includes:
+* Epic Hyperspace
+* Nuance Powerscribe 360
+* Change Healthcare McKesson PACS
+* GE Universal Viewer
+
+Until I determine how to simulate buttons clicks of a Nuance Powerscribe SpeechMike, the 'dictate', 'next field', 'previous field' and 'delete functions' require the use of Autohotkey.  The code for a possible script is provided below.
+
+```
+#SingleInstance Force
+#Persistent
+Menu, Tray, Add
+Menu, Tray, Add, Microsoft Edge, OpenEdge
+Menu, Tray, Add, Google Chrome, OpenChrome
+Menu, Tray, Add
+Menu, Tray, Add, StatDx, OpenStatDx
+Menu, Tray, Add, qGenda, OpenqGenda
+Menu, Tray, Add, QuinSite, OpenQuinSite
+	
+OpenqGenda() { 	Run, https://www.qgenda.com/ 	}
+OpenQuinSite() { 	Run, https://compass.quinsite.com/productivity/ }
+OpenStatDx() { Run, https://my.StatDx.com }
+OpenEdge() { Run, msedge.exe }
+OpenChrome() { Run, chrome.exe }
+
+F13::
+activewin := WinExist("A")
+WinActivate, PowerScribe 360 | Reporting
+Send, {F4}
+WinActivate, %activewin%
+return
+
+F14::
+activewin := WinExist("A")
+WinActivate, PowerScribe 360 | Reporting
+Send, {tab}
+WinActivate, %activewin%
+return
+
+F15::
+activewin := WinExist("A")
+WinActivate, PowerScribe 360 | Reporting
+Send, {delete}
+WinActivate, %activewin%
+return
+
+F16::
+activewin := WinExist("A")
+WinActivate, PowerScribe 360 | Reporting
+Send, {F12}
+WinActivate, %activewin%
+return
+```
+
 ## How to use this repository
 
 After [setup your qmk envorinment](https://github.com/qmk/qmk_firmware/blob/master/docs/newbs_getting_started.md), install [my Adafruit RP2040 USB Host Branch]((https://github.com/whyaaronbailey/adafruit_rp2040_usbh) following the 
