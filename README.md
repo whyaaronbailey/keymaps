@@ -30,8 +30,8 @@ Menu, Tray, Add, StatDx, OpenStatDx
 Menu, Tray, Add, qGenda, OpenqGenda
 Menu, Tray, Add, QuinSite, OpenQuinSite
 	
-OpenqGenda() { 	Run, https://www.qgenda.com/ 	}
-OpenQuinSite() { 	Run, https://compass.quinsite.com/productivity/ }
+OpenqGenda() { Run, https://www.qgenda.com/ }
+OpenQuinSite() { Run, https://compass.quinsite.com/productivity/ }
 OpenStatDx() { Run, https://my.StatDx.com }
 OpenEdge() { Run, msedge.exe }
 OpenChrome() { Run, chrome.exe }
