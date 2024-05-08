@@ -66,34 +66,33 @@ return
 ```
 ## Key Assignments:
 ```
-    * TARTARUS KEY LABEL            LAYOUT 0                    LAYOUT 1
-    *        01                     ANNOTATION (Y)              HANG (H)
-    *        02                     WL_SOFT (1)
-    *        03                     WL_LUNG (5)
-    *        04                     WL_SUBDURAL (8) (275 90)    WL_VASCULAR (7) 684 45)
-    *        05                     ZOOM (Z)                    INTERZOOM (+Z)
-    *        06                     OPENEPIC
-    *        07                     WL_BONE (2)                 WL_HARDWARE (6)
-    *        08                     SCROLL_UP
-    *        09                     WL_BRAIN (3)                WL_STROKE (4)
-    *        10                     ARROW (A)                   ELLIPSE (E)
-    *        11                     COPYACC
-    *        12                     FAST_UP
-    *        13                     SCROLLDOWN
-    *        14                     FAST_DOWN
-    *        15                     MEASURE (M)                 ROI (+E)
-    *        16                     OPENGE                      OPENMCKESSON
-    *        17                     SPINE LABEL (C)
-    *        18                     SPINE LABEL (T)
-    *        19                     SPINE LABEL (L)/NAVIGATOR
-    *        20                     DICTATE
-    *        THUMB BUTTON           MO(1) / LAYER SWITCH
-    *        DIRECTION PAD
-    *           UP                  FAST_UP
-    *           DOWN                FAST_DOWN
-    *           LEFT                KC_MS_WH_UP
-    *           RIGHT               KC_MS_WH_DOWN
-    */
+    TARTARUS KEY LABEL            LAYOUT 0                    LAYOUT 1
+           01                     ANNOTATION (Y)              HANG (H)
+           02                     WL_SOFT (1)
+           03                     WL_LUNG (5)
+           04                     WL_SUBDURAL (8) (275 90)    WL_VASCULAR (7) 684 45)
+           05                     ZOOM (Z)                    INTERZOOM (+Z)
+           06                     OPENEPIC
+           07                     WL_BONE (2)                 WL_HARDWARE (6)
+           08                     SCROLL_UP
+           09                     WL_BRAIN (3)                WL_STROKE (4)
+           10                     ARROW (A)                   ELLIPSE (E)
+           11                     COPYACC
+           12                     FAST_UP
+           13                     SCROLLDOWN
+           14                     FAST_DOWN
+           15                     MEASURE (M)                 ROI (+E)
+           16                     OPENGE                      OPENMCKESSON
+           17                     SPINE LABEL (C)
+           18                     SPINE LABEL (T)
+           19                     SPINE LABEL (L)/NAVIGATOR
+           20                     DICTATE
+           THUMB BUTTON           MO(1) / LAYER SWITCH
+           DIRECTION PAD
+              UP                  FAST_UP
+              DOWN                FAST_DOWN
+              LEFT                KC_MS_WH_UP
+              RIGHT               KC_MS_WH_DOWN
 ```
 
 ## How to use this repository
